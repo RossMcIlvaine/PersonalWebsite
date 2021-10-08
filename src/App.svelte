@@ -1,4 +1,5 @@
 <script>
+	import Footer from './Components/Footer.svelte';
 	let name = "Ross McIlvaine";
 </script>
 
@@ -30,6 +31,7 @@
 		<li>Assembled relevant datasets and produced cleaned data sets for ease of use in modeling</li>
 		<li>Incorporated decision tree algorithms for tweet classification using Python</li>
 	</ul>
+	<Footer/>
 </main>
 
 <style>
