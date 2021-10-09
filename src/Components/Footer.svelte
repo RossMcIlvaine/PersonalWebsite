@@ -37,6 +37,7 @@
         width: 30px;
         text-align: center;
         text-decoration: none;
+        transition: background-color 0.5s, color 0.5s;
     }
     .fa:hover {
         color: white;
