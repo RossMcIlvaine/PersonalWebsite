@@ -1,8 +1,9 @@
 <script>
 	import Footer from './Components/Footer.svelte';
+	import HalfScreen from './Components/HalfScreen.svelte';
 	import InfoBlock from './Components/InfoBlock.svelte';
 	let name = "Ross McIlvaine";
-	let NDsrc = './images/ND.png'
+	let NDsrc = './images/ND.png';
 </script>
 
 <main>
@@ -29,6 +30,9 @@
 		items={["Collaborated with team members to identify a twitter user’s political affiliation using twitter data",
 				"Assembled relevant datasets and produced cleaned data sets for ease of use in modeling",
 				"Incorporated decision tree algorithms for tweet classification using Python"]}/>
+
+	<HalfScreen/>
+	<HalfScreen flipped={true}/>
 	<Footer/>
 </main>
 
