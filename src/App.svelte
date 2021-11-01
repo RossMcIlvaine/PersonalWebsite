@@ -2,6 +2,7 @@
 	import Footer from './Components/Footer.svelte';
 	import HalfScreen from './Components/HalfScreen.svelte';
 	import InfoBlock from './Components/InfoBlock.svelte';
+	import Skill from './Components/Skill.svelte';
 	let name = "Ross McIlvaine";
 	let Profilesrc = './images/ProfilePic.jpg';
 	let NDsrc = './images/ND.png';
@@ -24,6 +25,20 @@
 							"GPA: 3.8",
 							"Dean's List: Fall 2019, Fall 2020, Spring 2021"]}/>
 				<h2>Skills</h2>
+				<div class='skills'>
+						<Skill>
+							<i class='fa fa-microphone' slot='icon'></i>
+							<p class='skill-desc' slot='desc'></p>
+						</Skill>
+						<Skill>
+							<i class='fa fa-object-group' slot='icon'></i>
+							<p class='skill-desc' slot='desc'></p>
+						</Skill>
+						<Skill>
+							<i class='fa fa-laugh-beam' slot='icon'></i>
+							<p class='skill-desc' slot='desc'></p>
+						</Skill>
+				</div>
 				<h2>Interests</h2>
 			</div>
 		</HalfScreen>
@@ -112,6 +127,19 @@
 	.contact-box {
 		margin: 2%;
 	}
+
+	.skills {
+		display: flex;
+	}
+
+	.fa {
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px;
+        font-size: 30px;
+        width: 30px;
+		text-align: center;
+    }
 
 	h2 {
 		text-align: center;
