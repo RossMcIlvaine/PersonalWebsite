@@ -23,8 +23,8 @@
 
 <style>
     main {
-        border: 2px solid rgb(168, 167, 167);
-        border-left: 10px solid rgb(168, 167, 167);
+        /* border: 2px solid rgb(168, 167, 167);
+        border-left: 10px solid rgb(168, 167, 167); */
         padding: 10px 30px;
         border-radius: 10px; 
         margin-bottom: 5%;
@@ -44,20 +44,20 @@
         text-align: right;
     }
 
-    main:hover {
+    /* main:hover {
         box-shadow: 3px 3px 3px rgb(123, 180, 255);
         border: 2px solid rgb(79, 152, 248);
         border-left: 10px solid rgb(79, 152, 248);
-    }
+    } */
 
     h3 {
 		text-align: left;
-        color: rgb(168, 167, 167);
+        color: black; /*rgb(168, 167, 167);*/
         transition: color 0.5s;
 	}
 
     h4 {
-        color: rgb(168, 167, 167);
+        color: black; /*rgb(168, 167, 167);*/
         transition: color 0.5s;
         margin: 2%;
 	}
@@ -70,11 +70,11 @@
 
     li {
 		text-align: left;
-        color:rgb(168, 167, 167);
+        color: black; /*rgb(168, 167, 167);*/
         transition: color 0.5s;
 	}
 
-    main:hover h3, main:hover h4, main:hover li  {
+    /* main:hover h3, main:hover h4, main:hover li  {
         color: black;
-    }
+    } */
 </style>

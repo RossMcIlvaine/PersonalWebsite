@@ -1,5 +1,6 @@
 <script>
     import TopButton from './TopButton.svelte';
+    export let top_button_present = true;
 </script>
 
 <main class='footer'>
@@ -7,9 +8,11 @@
         <a target="_blank" href="https://github.com/RossMcIlvaine" class='fa fa-github'></a>
         <a target="_blank" href="https://www.linkedin.com/in/ross-mcilvaine-95355a16b/" class='fa fa-linkedin'></a>
         <a target="_blank" href="https://www.instagram.com/rossmcilvaine/" class='fa fa-instagram'></a>
-        <div class='to-top'>
-            <TopButton/>
-        </div>
+        {#if top_button_present}
+            <div class='to-top'>
+                <TopButton/>
+            </div>
+        {/if}
     </div>
 </main>
 
@@ -22,6 +25,7 @@
         display: flex;
         justify-content: space-between;
         width: 30%;
+        margin: 2%;
     }
     .to-top {
         position: absolute;
