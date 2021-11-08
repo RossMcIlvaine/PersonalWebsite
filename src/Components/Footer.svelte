@@ -5,9 +5,9 @@
 
 <main class='footer'>
     <div class='socials'>
-        <a target="_blank" href="https://github.com/RossMcIlvaine" class='fa fa-github'></a>
-        <a target="_blank" href="https://www.linkedin.com/in/ross-mcilvaine-95355a16b/" class='fa fa-linkedin'></a>
-        <a target="_blank" href="https://www.instagram.com/rossmcilvaine/" class='fa fa-instagram'></a>
+        <a target="_blank" href="https://github.com/RossMcIlvaine" class='fab fa-github'></a>
+        <a target="_blank" href="https://www.linkedin.com/in/ross-mcilvaine-95355a16b/" class='fab fa-linkedin'></a>
+        <a target="_blank" href="https://www.instagram.com/rossmcilvaine/" class='fab fa-instagram'></a>
         {#if top_button_present}
             <div class='to-top'>
                 <TopButton/>
@@ -33,7 +33,7 @@
     }
 
     /* Styling for font awesome icons */
-    .fa {
+    .fab {
         background-color: white;
         border-radius: 50%;
         padding: 10px;
@@ -43,7 +43,7 @@
         text-decoration: none;
         transition: background-color 0.5s, color 0.5s;
     }
-    .fa:hover {
+    .fab:hover {
         color: white;
     }
     .fa-facebook {

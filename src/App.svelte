@@ -9,6 +9,7 @@
 	let Tattlesrc = './images/tattle_logo.png';
 	let CWsrc = './images/CW_logo.JPG';
 	let Twittersrc = './images/twitter.png';
+	let list_items = ['C/C++', 'Python', 'SQL', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'AWS']
 </script>
 
 <main>
@@ -21,25 +22,95 @@
 			<div slot='info'>
 				<h2>Education</h2>
 				<InfoBlock title={"University of Notre Dame"} location={"Notre Dame, IN"} date={"Graduation Date: May 2022"} alt={"University of Notre Dame Logo"} src={NDsrc}
-					items={["Bachelor of Science in Computer Engineering",
+					items={["Pursuing Bachelor of Science in Computer Engineering",
 							"GPA: 3.8",
-							"Dean's List: Fall 2019, Fall 2020, Spring 2021"]}/>
+							"Dean's List: Fall 2019, Fall 2020, Spring 2021",
+							"Relevant Courses: Data Structures, Electric Circuit Analysis, Operating Systems, Data Science, Electronics, Systems Programming, Database Concepts, Computer Architecture, Cryptography, Logic Design, Discrete Mathematics, Introduction to Embedded Systems"]}/>
 				<h2>Skills</h2>
 				<div class='skills'>
-						<Skill>
-							<i class='fa fa-microphone' slot='icon'></i>
-							<p class='skill-desc' slot='desc'></p>
-						</Skill>
-						<Skill>
-							<i class='fa fa-object-group' slot='icon'></i>
-							<p class='skill-desc' slot='desc'></p>
-						</Skill>
-						<Skill>
-							<i class='fa fa-laugh-beam' slot='icon'></i>
-							<p class='skill-desc' slot='desc'></p>
-						</Skill>
+					<Skill skill='programming' {list_items}>
+						<i class='fa fa-code' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Programming</h5>
+							<p class='skill-desc'>Five+ years of technical coding experience in a variety of languages and platforms including:</p>
+						</div>
+					</Skill>
+					<Skill>
+						<i class='fa fa-microphone' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Communication</h5>
+							<p class='skill-desc'>I am easy to get along with and enjoy meeting new people, but that doesn't mean I won't voice concerns when they present themselves.</p>
+						</div>
+					</Skill>
+					<Skill>
+						<i class='fa fa-object-group' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Design</h5>
+							<p class='skill-desc'>Passion for creating experiences that look great and work well. Focus is on a quality user experience and accesible solutions.</p>
+						</div>
+					</Skill>
+					<Skill>
+						<i class='fa fa-folder-open' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Organization</h5>
+							<p class='skill-desc'>Keeping an organized workspace makes for more efficient work. I like to make plans to keep myself moving forward.</p>
+						</div>
+					</Skill>
+					<Skill>
+						<i class='fa fa-graduation-cap' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Quick Learner</h5>
+							<p class='skill-desc'>There is no skill that cannot be learned through enough time and effort. When put in an unfamiliar position, I am quick to teach myself the concepts necessary to excel.</p>
+						</div>
+					</Skill>
 				</div>
-				<h2>Interests</h2>
+				<!--
+				<h2>Hobbies</h2>
+				<div class='skills'>
+					<Skill>
+						<i class='fa fa-basketball-ball' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Sports</h5>
+							<p class='skill-desc'>I've been playing basketball and golf for most of my life. More recently, I've joined the club teams for boxing and GAA at school.</p>
+						</div>
+					</Skill>
+					<Skill>
+						<i class='fa fa-dumbbell' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Working Out</h5>
+							<p class='skill-desc'>I like to keep myself in shape through lifting weights and running. These activities provide a great study break and allow me to come back to work more focused.</p>
+						</div>
+					</Skill>
+					<Skill>
+						<i class='fa fa-music' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Music</h5>
+							<p class='skill-desc'>.</p>
+						</div>
+					</Skill>
+					<Skill>
+						<i class='fa fa-swimmer' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Scuba Diving</h5>
+							<p class='skill-desc'>Living on Long Island has taught me to appreciate the natural beauty of the ocean. I have been scuba certified since 2011.</p>
+						</div>
+					</Skill>
+					<Skill>
+						<i class='fa fa-skiing' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Skiing</h5>
+							<p class='skill-desc'>.</p>
+						</div>
+					</Skill>
+					<Skill>
+						<i class='fa fa-film' slot='icon'></i>
+						<div class='skill-text' slot='desc'>
+							<h5 class='skill-title'>Movies</h5>
+							<p class='skill-desc'>.</p>
+						</div>
+					</Skill>
+				</div>
+				-->
 			</div>
 		</HalfScreen>
 	</div>
@@ -59,7 +130,7 @@
 							"Built frontend screens for app from scratch using JavaScript and the JavaScript React library",
 							"Linked user profile information to backend MongoDB database"]}/>
 
-				<InfoBlock title={"Tweet Classification"} location={"Notre Dame, IN"} date={"Fall 2020"} src={Twittersrc}
+				<InfoBlock title={"Tweet Classification"} location={"Notre Dame, IN"} date={"Fall 2020"} alt={"Twitter Logo"} src={Twittersrc}
 					items={["Collaborated with team members to identify a twitter user’s political affiliation using twitter data",
 							"Assembled relevant datasets and produced cleaned data sets for ease of use in modeling",
 							"Incorporated decision tree algorithms for tweet classification using Python"]}/>
@@ -130,6 +201,16 @@
 
 	.skills {
 		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.skill-text {
+		text-align: center;
+	}
+
+	.skill-desc {
+		text-align: center;
 	}
 
 	.fa {
@@ -152,6 +233,10 @@
 
 	h4 {
 		margin-left: 2%;
+	}
+
+	h5 {
+		margin: 0;
 	}
 
 	p {

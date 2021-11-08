@@ -15,7 +15,7 @@
             <slot name='section-title'></slot>
             <slot name='photo'></slot>
         </div>
-        <div class='half2'>
+        <div class='half2 {block_type}'>
             <slot name='info'></slot>
         </div>
     {:else}
