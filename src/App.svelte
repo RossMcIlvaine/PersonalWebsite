@@ -9,7 +9,18 @@
 	let Tattlesrc = './images/tattle_logo.png';
 	let CWsrc = './images/CW_logo.JPG';
 	let Twittersrc = './images/twitter.png';
-	let list_items = ['C/C++', 'Python', 'SQL', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'AWS']
+	let list_items = ['C/C++', 'Python', 'SQL', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'AWS'];
+
+	/* Spotify Playback
+	let spotify_src="https://sdk.scdn.co/spotify-player.js";
+	window.onSpotifyWebPlaybackSDKReady = () => {
+  		const token = 'BQD7d5LLvKemJUAL-zczyuVYmR4ZGdXuw6TYM7j2HmOqNUbJr-IDeYeJ3MvywUXubMUIvKzlV805cbfD2uhF8dSelvTnIg8zIk5OwWBGvLzKEH1RBfRkdt7dOQM_uE5YT7zHQGGXPQITphZjSnX2UYhiEj17dJ5oTBZgFVE';
+  		const player = new Spotify.Player({
+    	name: 'Web Playback SDK Quick Start Player',
+    	getOAuthToken: cb => { cb(token); },
+    	volume: 0.5
+  		});
+	} */
 </script>
 
 <main>
