@@ -39,6 +39,11 @@
         height: 50vh;
     }
 
+    /* Hide scrollbar for smaller section */
+    .contact::-webkit-scrollbar {
+        display: none;
+    }
+
     .half1 {
         height: 100%;
         width: 50%;
@@ -58,8 +63,8 @@
         background-color: white;
         overflow-y: scroll;
     }
-    /* Hide scrollbar in section */
+    /* Hide scrollbar in section 
     .half2::-webkit-scrollbar {
         display: none;
-    }
+    } */
 </style>
