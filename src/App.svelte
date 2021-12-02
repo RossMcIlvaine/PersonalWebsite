@@ -14,6 +14,12 @@
 
 <main>
 	<h1>Hello, I'm {name}!</h1>
+	<!--- <h6>
+		I'm a senior studying computer engineering at the University of Notre Dame and I'm particularly interested in data science and front end development.
+		In my free time I love staying in shape and I'm a member of the Boxing Club as well as the Gaelic Athletic Association here at school.
+		Otherwise, I enjoy listening to music whenever I'm able, and I'm constantly looking for new songs to add to my playlist.
+		I'm hardworking, a fast learner, and I'm easy to get along with, making me a great addition to any team.
+	</h6> -->
 	<h2><a href='#about-block'>ABOUT ME</a> / <a href='#experience-block'>EXPERIENCE</a> / <a href='#contact-block'>CONTACT ME</a></h2>
 	<div id='about-block'>
 		<HalfScreen block_type={'resume'}>
@@ -237,6 +243,13 @@
 
 	h5 {
 		margin: 0;
+	}
+
+	h6 {
+		font-size: 16px;
+		width: 70%;
+		text-align: center;
+		margin: 0 auto 0;
 	}
 
 	p {
