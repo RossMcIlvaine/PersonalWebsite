@@ -78,6 +78,13 @@ If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need 
 
 ## Deploying to the web
 
+### With [GitHub Pages]
+add changes
+commit changes
+```bash
+git subtree push --prefix public/ origin gh-pages
+```
+
 ### With [Vercel](https://vercel.com)
 
 Install `vercel` if you haven't already:
